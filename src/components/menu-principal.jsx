@@ -27,28 +27,26 @@ const menu = [
     "Historial de versiones",
 ]
 
-function slug (texto) {
+function slug(texto) {
     return (
         texto
-         .toLowerCase()
-         .replaceAll(/[¿?]/g, "")
-         .replaceAll('- ', "")
-         .replaceAll(/[. ]/g, "_")
-         .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()
+            .replace(/[¿?:,]/g, "")
+            .replace(/- /g, "")
+            .replace(/[. ]/g, "_")
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
     )
 }
 
 
-function MenuPrincipal () {
-    return ( 
+function MenuPrincipal() {
+    return (
         <div>
-        <p>{menu[0]}</p>
-        <p>{menu[1]}</p>
-        <div>
-            { menu.map(  entrada =>  <p key={entrada}> {entrada} </p>      )}
+            <p>{menu[0]}</p>
+            <p>{slug(menu[0])}</p>
         </div>
-        </div>
-     );
+    );
 }
 
-export default MenuPrincipal ;
+export default MenuPrincipal;
