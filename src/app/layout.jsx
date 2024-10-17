@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           <MenuPrincipal />
         </aside>
 
-        <main className="mx-2 mb-2 grow  overflow-y-auto">
+        <main className="mx-2 pb-6 grow  overflow-y-auto">
           {children}
         </main>
 

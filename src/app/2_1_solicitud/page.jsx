@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-4">
         <p>
-          Para solicitar el título deberás dirigirte al Centro docente donde finalizaste los estudios conducentes a la obtención del título solicitado. Debe ser solicitados por los alumnos, previo pago de las tasas correspondientes.
+          Para solicitar el título <spa className="font-bold">deberás dirigirte al Centro docente donde finalizaste los estudios</spa> conducentes a la obtención del título solicitado. Debe ser solicitados por los alumnos, previo pago de las tasas correspondientes.
         </p>
 
         <p>
@@ -40,28 +40,27 @@ export default function Home() {
         </p>
 
 
-
-
-
-
-
-
         <ItemLista>
-          Fotocopia DNI por ambas caras.
+          <spa className="font-bold">Fotocopia DNI por ambas caras.</spa>
         </ItemLista>
 
         <ItemLista>
-          Impreso de solicitud cumplimentado. Descargar impreso de solicitud (27155 B)
+        <spa className="font-bold">Impreso de solicitud cumplimentado</spa>. Descargar impreso de solicitud (27155 B)
         </ItemLista>
 
         <ItemLista>
-          Impreso 046 (se debe enviar el ejemplar para la administración y también el ejemplar para el interesado, que se devolverá sellado por el centro como resguardo del título).
+        <spa className="font-bold">Impreso 046 </spa> (se debe enviar el ejemplar para la administración y también el ejemplar para el interesado, que se devolverá sellado por el centro como resguardo del título).
         </ItemLista>
 
         <div className="flex flex-col gap-4 bg-blue-200 p-10 rounded-3xl shadow-lg shadow-slate-300">
-          Si deseas recibir la certificación académica con todas las calificaciones obtenidas en el ciclo, has de comunicarlo cuando envíes todos los documentos al centro.
+          <p>
+            Si deseas recibir la certificación académica con todas las calificaciones obtenidas en el ciclo, has de comunicarlo cuando envíes todos los documentos al centro.
+          </p>
 
-          Ten en cuenta que la cantidad a ingresar la indica la Ley de Presupuesto de la Comunidad Autónoma de Andalucía que esté en vigor. Pregunta a tu tutor/a el importe que has de abonar teniendo en cuenta que los decimales has de escribirlos empleando la coma.
+          <p>
+            Ten en cuenta que la cantidad a ingresar la indica la Ley de Presupuesto de la Comunidad Autónoma de Andalucía que esté en vigor. Pregunta a tu tutor/a el importe que has de abonar teniendo en cuenta que los decimales has de escribirlos empleando la coma.
+          </p>
+
         </div>
 
       </div>
