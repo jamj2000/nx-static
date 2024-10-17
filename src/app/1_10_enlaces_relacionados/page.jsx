@@ -9,6 +9,8 @@ export const metadata = {
   title: "1.10.- Enlaces relacionados"
 };
 
+const classLink = "font-extrabold text-blue-500 underline"
+
 export default function Home() {
   return (
     <>

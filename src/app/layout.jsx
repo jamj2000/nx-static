@@ -17,13 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased h-screen flex`} >
+      <body className={`${geistSans.variable} antialiased h-screen flex leading-4`} >
 
         <aside className="w-[310px] shrink-0 overflow-y-auto">
           <MenuPrincipal />
         </aside>
-        
-        <main className="mx-2 grow  overflow-y-auto">
+
+        <main className="mx-2 mb-2 grow  overflow-y-auto">
           {children}
         </main>
 
