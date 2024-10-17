@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 
 const menu = [
     "Información general: convalidaciones, exenciones y títulos",
@@ -39,12 +41,39 @@ function slug(texto) {
     )
 }
 
+const classLink = "block bg-blue-50 hover:bg-[#C3DCF7] text-[#044085] rounded-3xl mb-1 p-2"
 
 function MenuPrincipal() {
     return (
-        <div>
-            <p>{menu[0]}</p>
-            <p>{slug(menu[0])}</p>
+        <div className="bg-[rgba(4,64,133,0.5)] p-3 rounded-lg mx-2 my-2">
+            <Link className={classLink} href={'/'}>{menu[0]} </Link>
+
+            <details>
+                <summary className=" bg-blue-50 hover:bg-[#C3DCF7] text-[#044085] rounded-3xl mb-1 p-2">
+                    <Link href={slug(menu[1])}>{menu[1]} </Link>
+                </summary>
+                <Link className={`${classLink} ml-4`} href={slug(menu[2])}>{menu[2]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[5])}>{menu[5]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[13])}>{menu[13]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[14])}>{menu[14]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[15])}>{menu[15]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[16])}>{menu[16]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[17])}>{menu[17]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[18])}>{menu[18]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[19])}>{menu[19]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[20])}>{menu[20]} </Link>
+            </details>
+
+            <details>
+                <summary className="bg-[#C3DCF7] text-[#044085] rounded-3xl mb-1 p-2">
+                    <Link href={slug(menu[21])}>{menu[21]} </Link>
+                </summary>
+                <Link className={`${classLink} ml-4`} href={slug(menu[22])}>{menu[22]} </Link>
+                <Link className={`${classLink} ml-4`} href={slug(menu[23])}>{menu[23]} </Link>
+            </details>
+
+            <Link className={classLink} href={slug(menu[24])}>{menu[24]} </Link>
+
         </div>
     );
 }
