@@ -25,7 +25,14 @@
 "2.2.- Tramitación y recogida",
 "Historial de versiones",
 
+---
 
 <[^>]*>
 \n\s*  por  \n
 ([^\n]*)\n  por "$1",\n
+
+
+---
+
+menu.forEach ( entrada => fs.mkdirSync ( slug( entrada)  )   )
+menu.forEach ( entrada => fs.copyFileSync ( './page.jsx', slug(entrada)+'/page.jsx'  )   )

@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/app/globals.css";
 import MenuPrincipal from "@/components/menu-principal";
 
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
@@ -17,12 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} antialiased h-screen flex`} >
+      <body className={`${geistSans.variable} antialiased h-screen flex`} >
 
-        <aside className="w-[310px] overflow-y-auto">
+        <aside className="w-[310px] shrink-0 overflow-y-auto">
           <MenuPrincipal />
         </aside>
-        <main className="grow">
+        
+        <main className="mx-2 grow  overflow-y-auto">
           {children}
         </main>
 
