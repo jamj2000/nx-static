@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} antialiased h-screen flex leading-4`} >
 
-        <aside className="w-[310px] shrink-0 overflow-y-auto">
+       
           <MenuPrincipal />
-        </aside>
+       
 
         <main className="mx-2 pb-6 grow  overflow-y-auto">
           {children}
