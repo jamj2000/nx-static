@@ -1,10 +1,39 @@
 # NextJS: Contenido estático
+> Ejemplo de proyecto NextJS con contenido estático.
+
+Esto es una réplica del sitio
+
+- [Información tutorial FP - Junta de Andalucía](https://www.juntadeandalucia.es/educacion/gestionafp/documentacion/Informacion_tutorial/index.html)
+
+Para los estilos se ha usado el framework Tailwind.
+
+
+## Estructura base de carpetas y archivos
+
+```
+src
+├── app
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.jsx
+│   ├── not-found.jsx
+│   └── page.jsx
+├── components
+│   ├── item-lista.jsx
+│   ├── menu-principal.jsx
+│   ├── nav.jsx
+│   └── titulo.jsx
+└── lib
+    └── utils.js
+```
 
 ## Tratamiento de texto con expresiones regulares
 
+Para extraer la información de las distintas opciones del menú principal, hemos optado por realizar un poco de tratamiento de texto usando expresiones regulares.
+
 Copiamos el menú principal de https://www.juntadeandalucia.es/educacion/gestionafp/documentacion/Informacion_tutorial/index.html
 
-En VSCode pulsamos `Ctrl+H` y seleccionamos `Usar expresión regular` y sustituimos:
+En VSCode pulsamos `Ctrl+H` y seleccionamos `Usar expresión regular` y realizamos 3 operaciones:
 
 ```
 <[^>]*>
@@ -14,6 +43,8 @@ En VSCode pulsamos `Ctrl+H` y seleccionamos `Usar expresión regular` y sustitui
 
 
 ## Generación de carpetas y páginas
+
+Para automatizar la creación de carpetas y páginas hemos ejecutado el siguiente código en NodeJS.
 
 ```sh
 cd  src/app
