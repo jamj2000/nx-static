@@ -1,5 +1,5 @@
 import Titulo from "@/components/titulo";
-import Nav from "@/components/nav";
+import Nav from "@/components/nav.orig";
 
 
 export const metadata = {

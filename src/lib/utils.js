@@ -1,5 +1,5 @@
 
-const menu = [
+export const menu = [
     "Información general: convalidaciones, exenciones y títulos",
     "1.- Solicitud de convalidaciones",
     "1.1.- Convalidaciones en FP",
@@ -27,7 +27,7 @@ const menu = [
     "Historial de versiones",
 ]
 
-function slug(texto) {
+export function slug(texto) {
     return (
         texto.toLowerCase()
             .replace(/[¿?:,]/g, "")
@@ -39,4 +39,4 @@ function slug(texto) {
 }
 
 
-export { menu, slug }
+// export { menu, slug }

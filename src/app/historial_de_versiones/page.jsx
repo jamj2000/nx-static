@@ -9,7 +9,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Titulo>  {metadata.title} </Titulo>
+      <Titulo> {metadata.title} </Titulo>
       <Nav pos={24} />
 
       <div className="flex flex-col gap-4">

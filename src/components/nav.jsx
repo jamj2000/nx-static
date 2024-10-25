@@ -4,15 +4,20 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 function Nav({ pos }) {
     return (
-        <div className="mt-4 mb-8 text-right">            
+        <div className="p-4 text-right">
             {pos > 0 &&
-                <Link className="px-6 py-3 text-blue-800 bg-blue-100 hover:bg-[#C3DCF7] rounded-l-full" href={slug(menu[pos - 1])}>  <ArrowLeft className="inline size-4"/> Anterior </Link>
+                <Link href={slug(menu[pos - 1])} className="p-2 rounded-l-full bg-blue-200 text-2xl text-blue-500 mr-4">
+                    <ArrowLeft className="inline"/> Anterior
+                </Link>
             }
-            {pos < menu.length - 1 &&
-                <Link className="ml-1 px-6 py-3 text-blue-800 bg-blue-100 hover:bg-[#C3DCF7] rounded-r-full" href={slug(menu[pos + 1])}> Siguiente <ArrowRight className="inline size-4"/> </Link>
+            {pos < menu.length - 1  &&
+                <Link href={slug(menu[pos + 1])} className="p-2 rounded-r-full bg-blue-200 text-2xl text-blue-500">
+                    Siguiente <ArrowRight className="inline" />
+                </Link>
             }
+
         </div>
     );
 }
 
-export default Nav
+export default Nav;
