@@ -17,14 +17,14 @@ function MenuPrincipal() {
             {open
                 ? <X
                     onClick={() => setOpen(false)}
-                    className="fixed top-2 right-2 size-12 bg-blue-200 rounded-md p-2" />
+                    className="fixed top-2 right-2 z-10 size-12 bg-blue-200 rounded-md p-2" />
                 : <Menu
                     onClick={() => setOpen(true)}
-                    className="fixed top-2 right-2 size-12 bg-blue-200 rounded-md p-2" />
+                    className="fixed top-2 right-2 z-10 size-12 bg-blue-200 rounded-md p-2" />
             }
 
             {open &&
-                <aside className="w-[310px] shrink-0 overflow-y-auto bg-[rgba(4,64,133,0.5)] p-3 rounded-lg mx-2 my-2">
+                <aside className="shrink-0 overflow-y-auto bg-[rgba(4,64,133,0.5)] p-3 rounded-lg mx-2 my-2 fixed inset-0 md:relative md:w-[310px]">
                     <Link className={`${classLink}`} href={slug(menu[0])}>{menu[0]} </Link>
 
                     <details>

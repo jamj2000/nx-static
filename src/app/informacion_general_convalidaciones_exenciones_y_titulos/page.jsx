@@ -13,7 +13,7 @@ export default function Home() {
       <Nav pos={0} />
 
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-4 lg:flex-row">
+        <div className="flex flex-col gap-4 items-center lg:flex-row ">
           <div className="flex flex-col gap-4">
             <p>
               Antes de empezar debemos aclarar la diferencia entre convalidación, exención y traslado de calificación. La convalidación es el procedimiento por el cual se reconoce como superado un módulo que contiene los contenidos del módulo, módulos profesionales, asignatura o unidad de competencia que se aporta. La exención solo se aplica al módulo profesional de formación en centros de trabajo y se debe aportar una experiencia profesional acreditable y de duración definida. El traslado de calificaciones es la calificación que se asigna a un módulo que posee el mismo código y denominación que otro ya cursado y superado.
@@ -22,7 +22,7 @@ export default function Home() {
               A continuación, se muestra información tutorial que esperamos que te sea de utilidad.
             </p>
           </div>
-          <Image className="px-5 self-center"
+          <Image className="px-5"
             src="https://www.juntadeandalucia.es/educacion/gestionafp/documentacion/Informacion_tutorial/tutor-and-student.png"
             width={200}
             height={100}
