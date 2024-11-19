@@ -1,5 +1,5 @@
 import Titulo from "@/components/titulo";
-import Nav from "@/components/nav.orig";
+import Nav from "@/components/nav";
 import ItemLista from "@/components/item-lista";
 
 
